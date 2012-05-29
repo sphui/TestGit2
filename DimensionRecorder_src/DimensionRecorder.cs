@@ -18,7 +18,7 @@ namespace DimensionRecorder
 
 
     /// <summary>
-    /// Summary description for DimensionRecorder.
+    /// Summary description for DimensionRecorder. for testing
     /// </summary>
     [Guid("170A8FB9-A9A1-49BC-8A4E-71BE2AFCC3D4")]
     public class DimensionRecorder : ISwAddin
