@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DimensionRecorder", "DimensionRecorder.csproj", "{3EC38387-4478-45D6-B92C-BA5A82377C95}"
 EndProject
 Global
