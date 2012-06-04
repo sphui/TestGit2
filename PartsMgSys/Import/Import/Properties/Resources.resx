@@ -126,6 +126,9 @@
   <data name="DeliveredByBorrow" xml:space="preserve">
     <value>因串件到货</value>
   </data>
+  <data name="InputwrongForDeliver" xml:space="preserve">
+    <value>到货情况输入错误，请输入下面值中的一个:"到货","未到货","因串件到货","被串件未到货"</value>
+  </data>
   <data name="NotDeliver" xml:space="preserve">
     <value>未到货</value>
   </data>

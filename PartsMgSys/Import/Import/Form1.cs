@@ -100,7 +100,23 @@ namespace Import
 
         private void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (dataGridView1.Columns[e.ColumnIndex].Name == Properties.Resources.DeliverCase)
+            {
+                DataGridViewRow datarow = dataGridView1.Rows[e.RowIndex];
+                if (datarow == null)
+                    return;
+                DataGridViewCell datacell = datarow.Cells[e.ColumnIndex];
+                if (datacell == null)
+                    return;
+                if(string.Compare(datacell.Value as string, Properties.Resources.Delived) != 0 &&
+                    string.Compare(datacell.Value as string, Properties.Resources.NotDeliver) != 0 &&
+                    string.Compare(datacell.Value as string, Properties.Resources.DeliveredByBorrow) != 0 &&
+                    string.Compare(datacell.Value as string, Properties.Resources.NotDeliverByBorrow) != 0)
+                {
+                    System.Windows.Forms.MessageBox.Show(Properties.Resources.InputwrongForDeliver);
+                    datacell.Value = string.Empty;
+                }
+            }
         }
 
     }

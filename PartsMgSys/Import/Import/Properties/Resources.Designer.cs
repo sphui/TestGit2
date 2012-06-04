@@ -88,6 +88,15 @@ namespace Import.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 到货情况输入错误，请输入下面值中的一个:&quot;到货&quot;,&quot;未到货&quot;,&quot;因串件到货&quot;,&quot;被串件未到货&quot;.
+        /// </summary>
+        internal static string InputwrongForDeliver {
+            get {
+                return ResourceManager.GetString("InputwrongForDeliver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 未到货.
         /// </summary>
         internal static string NotDeliver {
