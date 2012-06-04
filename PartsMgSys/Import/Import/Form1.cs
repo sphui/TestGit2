@@ -53,6 +53,7 @@ namespace Import
                     if ((SelectedTable != string.Empty) && (SelectedTable != null))
                     {
                         DataTable dt = GetDataTableExcel(txtFileName.Text, SelectedTable);
+                        dt.Columns.Add(new DataColumn(Properties.Resources.DeliverCase, typeof(string)));
                         dataGridView1.DataSource = dt.DefaultView;
                     }
                 }
@@ -95,6 +96,11 @@ namespace Import
                 }
             }
             return strTables;
+        }
+
+        private void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
     }

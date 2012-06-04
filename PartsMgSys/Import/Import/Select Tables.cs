@@ -40,8 +40,9 @@ namespace Import
                             lv.Tag = tables;
                             lstViewTables.Items.Add(lv);
                         }
-                        catch (Exception ex)
-                        { }
+                        catch (Exception)
+                        {
+                        }
                     }
                 }
             }
@@ -58,7 +59,7 @@ namespace Import
                             lv.Tag = dtTable.Rows[tables][0];
                             lstViewTables.Items.Add(lv);
                         }
-                        catch (Exception ex)
+                        catch (Exception)
                         { }
                     }
                 }

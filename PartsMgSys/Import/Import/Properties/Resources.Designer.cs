@@ -59,5 +59,50 @@ namespace Import.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 到货.
+        /// </summary>
+        internal static string Delived {
+            get {
+                return ResourceManager.GetString("Delived", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 到货情况.
+        /// </summary>
+        internal static string DeliverCase {
+            get {
+                return ResourceManager.GetString("DeliverCase", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 因串件到货.
+        /// </summary>
+        internal static string DeliveredByBorrow {
+            get {
+                return ResourceManager.GetString("DeliveredByBorrow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 未到货.
+        /// </summary>
+        internal static string NotDeliver {
+            get {
+                return ResourceManager.GetString("NotDeliver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 被串件未到货.
+        /// </summary>
+        internal static string NotDeliverByBorrow {
+            get {
+                return ResourceManager.GetString("NotDeliverByBorrow", resourceCulture);
+            }
+        }
     }
 }
