@@ -72,7 +72,7 @@ namespace Import
             {
                 if (tableName != string.Empty)
                 {
-                    Form1.SelectedTable = tableName;
+                    InputForm1.SelectedTable = tableName;
                     this.Close();
                 }
                 else

@@ -13,9 +13,9 @@ using System.Windows.Controls;
 using ADOX;
 namespace Import
 {
-    public partial class Form1 : Form
+    public partial class InputForm1 : Form
     {
-        public Form1()
+        public InputForm1()
         {
             InitializeComponent();
         }
