@@ -51,7 +51,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 77);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(572, 211);
+            this.dataGridView1.Size = new System.Drawing.Size(665, 272);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEndEdit);
             // 
@@ -76,11 +76,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 299);
+            this.ClientSize = new System.Drawing.Size(703, 377);
             this.Controls.Add(this.txtFileName);
             this.Controls.Add(this.lblFilename);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
+            this.MaximumSize = new System.Drawing.Size(711, 411);
+            this.MinimumSize = new System.Drawing.Size(711, 411);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
