@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InputForm1));
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonImport = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtFileName = new System.Windows.Forms.TextBox();
-            this.lblFilename = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.txtMotorNO = new System.Windows.Forms.TextBox();
+            this.lableMotorNO = new System.Windows.Forms.Label();
+            this.buttonAddRow = new System.Windows.Forms.Button();
+            this.buttonNew = new System.Windows.Forms.Button();
+            this.buttonAddColumn = new System.Windows.Forms.Button();
+            this.buttonSaveDataBase = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonImport
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            resources.ApplyResources(this.buttonImport, "buttonImport");
+            this.buttonImport.Name = "buttonImport";
+            this.buttonImport.UseVisualStyleBackColor = true;
+            this.buttonImport.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // dataGridView1
             // 
@@ -55,52 +55,52 @@
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEndEdit);
             // 
-            // txtFileName
+            // txtMotorNO
             // 
-            resources.ApplyResources(this.txtFileName, "txtFileName");
-            this.txtFileName.Name = "txtFileName";
+            resources.ApplyResources(this.txtMotorNO, "txtMotorNO");
+            this.txtMotorNO.Name = "txtMotorNO";
             // 
-            // lblFilename
+            // lableMotorNO
             // 
-            resources.ApplyResources(this.lblFilename, "lblFilename");
-            this.lblFilename.Name = "lblFilename";
+            resources.ApplyResources(this.lableMotorNO, "lableMotorNO");
+            this.lableMotorNO.Name = "lableMotorNO";
             // 
-            // button2
+            // buttonAddRow
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonAddRow, "buttonAddRow");
+            this.buttonAddRow.Name = "buttonAddRow";
+            this.buttonAddRow.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // buttonNew
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonNew, "buttonNew");
+            this.buttonNew.Name = "buttonNew";
+            this.buttonNew.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // buttonAddColumn
             // 
-            resources.ApplyResources(this.button4, "button4");
-            this.button4.Name = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonAddColumn, "buttonAddColumn");
+            this.buttonAddColumn.Name = "buttonAddColumn";
+            this.buttonAddColumn.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // buttonSaveDataBase
             // 
-            resources.ApplyResources(this.button5, "button5");
-            this.button5.Name = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.buttonSaveDataBase, "buttonSaveDataBase");
+            this.buttonSaveDataBase.Name = "buttonSaveDataBase";
+            this.buttonSaveDataBase.UseVisualStyleBackColor = true;
             // 
             // InputForm1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.txtFileName);
-            this.Controls.Add(this.lblFilename);
+            this.Controls.Add(this.buttonSaveDataBase);
+            this.Controls.Add(this.buttonAddColumn);
+            this.Controls.Add(this.buttonNew);
+            this.Controls.Add(this.buttonAddRow);
+            this.Controls.Add(this.txtMotorNO);
+            this.Controls.Add(this.lableMotorNO);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonImport);
             this.Name = "InputForm1";
             this.ShowIcon = false;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -111,14 +111,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonImport;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox txtFileName;
-        private System.Windows.Forms.Label lblFilename;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox txtMotorNO;
+        private System.Windows.Forms.Label lableMotorNO;
+        private System.Windows.Forms.Button buttonAddRow;
+        private System.Windows.Forms.Button buttonNew;
+        private System.Windows.Forms.Button buttonAddColumn;
+        private System.Windows.Forms.Button buttonSaveDataBase;
     }
 }
 

@@ -27,13 +27,13 @@ namespace Import
             OpenFileDialog fdlg = new OpenFileDialog();
             fdlg.Title = "Select file";
             fdlg.InitialDirectory = @"c:\";
-            fdlg.FileName = txtFileName.Text;
+            fdlg.FileName = txtMotorNO.Text;
             fdlg.Filter = "Excel Sheet(*.xls)|*.xls|All Files(*.*)|*.*";
             fdlg.FilterIndex = 1;
             fdlg.RestoreDirectory = true;
             if (fdlg.ShowDialog() == DialogResult.OK)
             {
-                txtFileName.Text = fdlg.FileName;
+                txtMotorNO.Text = fdlg.FileName;
                 Import();
                 Application.DoEvents();
             }
@@ -41,18 +41,18 @@ namespace Import
 
         private void Import()
         {
-            if (txtFileName.Text.Trim() != string.Empty)
+            if (txtMotorNO.Text.Trim() != string.Empty)
             {
                 try
                 {
-                    string[] strTables = GetTableExcel(txtFileName.Text);
+                    string[] strTables = GetTableExcel(txtMotorNO.Text);
 
                     frmSelectTables objSelectTable = new frmSelectTables(strTables);
                     objSelectTable.ShowDialog(this);
                     objSelectTable.Dispose();
                     if ((SelectedTable != string.Empty) && (SelectedTable != null))
                     {
-                        DataTable dt = GetDataTableExcel(txtFileName.Text, SelectedTable);
+                        DataTable dt = GetDataTableExcel(txtMotorNO.Text, SelectedTable);
                         dt.Columns.Add(new DataColumn(Properties.Resources.DeliverCase, typeof(string)));
                         dataGridView1.DataSource = dt.DefaultView;
                     }

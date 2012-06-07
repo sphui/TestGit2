@@ -118,29 +118,29 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonImport.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 36</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonImport.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 25</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonImport.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
+  <data name="buttonImport.Text" xml:space="preserve">
     <value>导入excel文件</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="&gt;&gt;buttonImport.Name" xml:space="preserve">
+    <value>buttonImport</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonImport.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonImport.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonImport.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
@@ -164,151 +164,151 @@
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="txtFileName.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtMotorNO.Location" type="System.Drawing.Point, System.Drawing">
     <value>517, 36</value>
   </data>
-  <data name="txtFileName.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtMotorNO.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 21</value>
   </data>
-  <data name="txtFileName.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtMotorNO.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="&gt;&gt;txtFileName.Name" xml:space="preserve">
-    <value>txtFileName</value>
+  <data name="&gt;&gt;txtMotorNO.Name" xml:space="preserve">
+    <value>txtMotorNO</value>
   </data>
-  <data name="&gt;&gt;txtFileName.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtMotorNO.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtFileName.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtMotorNO.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtFileName.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtMotorNO.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="lblFilename.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lableMotorNO.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblFilename.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="lableMotorNO.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="lblFilename.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lableMotorNO.Location" type="System.Drawing.Point, System.Drawing">
     <value>435, 38</value>
   </data>
-  <data name="lblFilename.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lableMotorNO.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
   </data>
-  <data name="lblFilename.TabIndex" type="System.Int32, mscorlib">
+  <data name="lableMotorNO.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="lblFilename.Text" xml:space="preserve">
+  <data name="lableMotorNO.Text" xml:space="preserve">
     <value>发动机编号：</value>
   </data>
-  <data name="&gt;&gt;lblFilename.Name" xml:space="preserve">
-    <value>lblFilename</value>
+  <data name="&gt;&gt;lableMotorNO.Name" xml:space="preserve">
+    <value>lableMotorNO</value>
   </data>
-  <data name="&gt;&gt;lblFilename.Type" xml:space="preserve">
+  <data name="&gt;&gt;lableMotorNO.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblFilename.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lableMotorNO.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lblFilename.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lableMotorNO.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonAddRow.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 342</value>
   </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonAddRow.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 25</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonAddRow.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
+  <data name="buttonAddRow.Text" xml:space="preserve">
     <value>增加行</value>
   </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
+  <data name="&gt;&gt;buttonAddRow.Name" xml:space="preserve">
+    <value>buttonAddRow</value>
   </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonAddRow.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonAddRow.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonAddRow.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonNew.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 36</value>
   </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonNew.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 25</value>
   </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonNew.TabIndex" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
-  <data name="button3.Text" xml:space="preserve">
+  <data name="buttonNew.Text" xml:space="preserve">
     <value>从模版新建</value>
   </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
+  <data name="&gt;&gt;buttonNew.Name" xml:space="preserve">
+    <value>buttonNew</value>
   </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonNew.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonNew.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonNew.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonAddColumn.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 343</value>
   </data>
-  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonAddColumn.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 25</value>
   </data>
-  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonAddColumn.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
-  <data name="button4.Text" xml:space="preserve">
+  <data name="buttonAddColumn.Text" xml:space="preserve">
     <value>增加列</value>
   </data>
-  <data name="&gt;&gt;button4.Name" xml:space="preserve">
-    <value>button4</value>
+  <data name="&gt;&gt;buttonAddColumn.Name" xml:space="preserve">
+    <value>buttonAddColumn</value>
   </data>
-  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonAddColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonAddColumn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonAddColumn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="buttonSaveDataBase.Location" type="System.Drawing.Point, System.Drawing">
     <value>578, 342</value>
   </data>
-  <data name="button5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="buttonSaveDataBase.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 25</value>
   </data>
-  <data name="button5.TabIndex" type="System.Int32, mscorlib">
+  <data name="buttonSaveDataBase.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="button5.Text" xml:space="preserve">
+  <data name="buttonSaveDataBase.Text" xml:space="preserve">
     <value>保存到数据库</value>
   </data>
-  <data name="&gt;&gt;button5.Name" xml:space="preserve">
-    <value>button5</value>
+  <data name="&gt;&gt;buttonSaveDataBase.Name" xml:space="preserve">
+    <value>buttonSaveDataBase</value>
   </data>
-  <data name="&gt;&gt;button5.Type" xml:space="preserve">
+  <data name="&gt;&gt;buttonSaveDataBase.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;buttonSaveDataBase.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;buttonSaveDataBase.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
