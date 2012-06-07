@@ -8,8 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Data.SqlClient;
-using System.Windows.Documents;
-using System.Windows.Controls;
 using ADOX;
 namespace Import
 {
