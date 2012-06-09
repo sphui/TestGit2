@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using MongoDB.Driver;
+using MongoDB.Bson;
 
 namespace Import
 {
@@ -32,6 +34,20 @@ namespace Import
             set {mProperties = value;}
         }
         #endregion
+
+        #region public methods
+        public BsonDocument ToMongoDocument()
+        {
+            BsonDocument partdoc = new BsonDocument();
+            partdoc["PartSerialNumber"] = SerialNumber;
+
+            BsonDocument propsdoc = new BsonDocument();
+            propsdoc.Add(propsdoc);
+            partdoc["PartProperties"] = propsdoc;
+
+            return partdoc;
+        }
+        #endregion
     }
 
     public class MotorObject
@@ -59,6 +75,25 @@ namespace Import
         {
             get { return mParts; }
             set { mParts = value; }
+        }
+        #endregion
+
+        #region public methods
+        public BsonDocument ToMongoDocument()
+        {
+            BsonDocument motordoc = new BsonDocument();
+            motordoc["MotorSerialNumber"] = SerialNumber;
+
+            BsonDocument partsdoc = new BsonDocument();
+            int index = 0;
+            foreach (PartObject part in Parts)
+            {
+                partsdoc["Part" + index.ToString()] = part.ToMongoDocument();
+                index++;
+            }
+            motordoc["Parts"] = partsdoc;
+
+            return motordoc;
         }
         #endregion
     }
