@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Data.SqlClient;
 using ADOX;
+
 namespace Import
 {
     public partial class InputForm1 : Form
@@ -115,6 +116,25 @@ namespace Import
                     datacell.Value = string.Empty;
                 }
             }
+        }
+
+        private void buttonSaveDataBase_Click(object sender, EventArgs e)
+        {
+            //var mongo = new Mongo();
+            //mongo.Connect();
+
+            //var db = mongo["PartsManage"];
+            //var motorsdb = db["Motors"];
+
+            //PartObject part = new PartObject("test1s");
+            //part.PartProperties.Add("a", "1");
+            //part.PartProperties.Add("b", "2");
+            //MotorObject motor = new MotorObject("testmotor");
+            //motor.Parts.Add(part);
+
+            //var json = new MongoJson();
+            //var firstNoteDocument = json.DocumentFrom(motor);
+            //motorsdb.Insert(firstNoteDocument);
         }
 
     }

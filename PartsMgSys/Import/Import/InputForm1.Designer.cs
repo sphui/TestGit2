@@ -88,6 +88,7 @@
             resources.ApplyResources(this.buttonSaveDataBase, "buttonSaveDataBase");
             this.buttonSaveDataBase.Name = "buttonSaveDataBase";
             this.buttonSaveDataBase.UseVisualStyleBackColor = true;
+            this.buttonSaveDataBase.Click += new System.EventHandler(this.buttonSaveDataBase_Click);
             // 
             // InputForm1
             // 
