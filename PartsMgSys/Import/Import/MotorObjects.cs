@@ -42,9 +42,8 @@ namespace Import
             partdoc["PartSerialNumber"] = SerialNumber;
 
             BsonDocument propsdoc = new BsonDocument();
-            propsdoc.Add(propsdoc);
+            propsdoc.Add(PartProperties);
             partdoc["PartProperties"] = propsdoc;
-
             return partdoc;
         }
         #endregion

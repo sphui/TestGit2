@@ -53,6 +53,7 @@ namespace Import
                     if ((SelectedTable != string.Empty) && (SelectedTable != null))
                     {
                         DataTable dt = GetDataTableExcel(txtMotorNO.Text, SelectedTable);
+                        List<DataColumn> emptyColumns = new List<DataColumn>();
                         dt.Columns.Add(new DataColumn(Properties.Resources.DeliverCase, typeof(string)));
                         dataGridView1.DataSource = dt.DefaultView;
                     }
@@ -128,7 +129,7 @@ namespace Import
 
             PartObject part = new PartObject("test1s");
             part.PartProperties.Add("a", "1");
-            part.PartProperties.Add("b", "2");
+            part.PartProperties.Add("b", string.Empty);
             MotorObject motor = new MotorObject("testmotor");
             motor.Parts.Add(part);
 
