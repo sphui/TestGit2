@@ -21,6 +21,7 @@ namespace Import
         }
 
         public static string SelectedTable = string.Empty;
+        private string mSelectedFile = string.Empty;
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -33,7 +34,8 @@ namespace Import
             fdlg.RestoreDirectory = true;
             if (fdlg.ShowDialog() == DialogResult.OK)
             {
-                txtMotorNO.Text = fdlg.FileName;
+                mSelectedFile = fdlg.FileName;
+                txtMotorNO.Text = System.IO.Path.GetFileNameWithoutExtension(fdlg.FileName);
                 Import();
                 Application.DoEvents();
             }
@@ -41,19 +43,18 @@ namespace Import
 
         private void Import()
         {
-            if (txtMotorNO.Text.Trim() != string.Empty)
+            if (mSelectedFile.Trim() != string.Empty)
             {
                 try
                 {
-                    string[] strTables = GetTableExcel(txtMotorNO.Text);
+                    string[] strTables = GetTableExcel(mSelectedFile);
 
                     frmSelectTables objSelectTable = new frmSelectTables(strTables);
                     objSelectTable.ShowDialog(this);
                     objSelectTable.Dispose();
                     if ((SelectedTable != string.Empty) && (SelectedTable != null))
                     {
-                        DataTable dt = GetDataTableExcel(txtMotorNO.Text, SelectedTable);
-                        List<DataColumn> emptyColumns = new List<DataColumn>();
+                        DataTable dt = GetDataTableExcel(mSelectedFile, SelectedTable);
                         dt.Columns.Add(new DataColumn(Properties.Resources.DeliverCase, typeof(string)));
                         dataGridView1.DataSource = dt.DefaultView;
                     }
