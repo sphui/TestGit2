@@ -123,20 +123,28 @@ namespace Import
 
         private void buttonSaveDataBase_Click(object sender, EventArgs e)
         {
-            var mongo = MongoServer.Create();
+            try
+            {
+                var mongo = MongoServer.Create();
 
-            var db = mongo.GetDatabase("PartsManage");
-            var motorsdb = db.GetCollection("Motors");
+                var db = mongo.GetDatabase("PartsManage");
+                var motorsdb = db.GetCollection("Motors");
 
-            PartObject part = new PartObject("test1s");
-            part.PartProperties.Add("a", "1");
-            part.PartProperties.Add("b", string.Empty);
-            MotorObject motor = new MotorObject("testmotor");
-            motor.Parts.Add(part);
+                //PartObject part = new PartObject("test1s");
+                //part.PartProperties.Add("a", "1");
+                //part.PartProperties.Add("b", string.Empty);
+                MotorObject motor = new MotorObject(txtMotorNO.Text);
+                motor.FromDataGridView(dataGridView1);
+                //motor.Parts.Add(part);
 
-            //var json = new MongoJson();
-            //var firstNoteDocument = json.DocumentFrom(motor);
-            motorsdb.Insert(motor.ToMongoDocument());
+                //var json = new MongoJson();
+                //var firstNoteDocument = json.DocumentFrom(motor);
+                motorsdb.Insert(motor.ToMongoDocument());
+            }
+            catch (System.Exception)
+            {
+                System.Windows.Forms.MessageBox.Show("Failed to write to database");
+            }
         }
 
     }

@@ -15,6 +15,12 @@ namespace Import
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            if (!MongoDBServer.Instance.Start())
+            {
+                System.Windows.Forms.MessageBox.Show("Database failed to start");
+                return;
+            }
+
             Application.Run(new InputForm1());
         }
     }

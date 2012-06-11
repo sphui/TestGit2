@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using MongoDB.Driver;
 using MongoDB.Bson;
+using System.Windows.Forms;
 
 namespace Import
 {
@@ -93,6 +94,43 @@ namespace Import
             motordoc["Parts"] = partsdoc;
 
             return motordoc;
+        }
+
+        public bool FromDataGridView(DataGridView datagridview)
+        {
+            List<string> clmnnames = new List<string>();
+            foreach (DataGridViewColumn clmn in datagridview.Columns)
+            {
+                clmnnames.Add(clmn.Name);
+            }
+
+            int partnoindex = 0;
+            if (!clmnnames.Contains("件号"))
+            {
+                System.Windows.Forms.MessageBox.Show("Didn't find part no!");
+                return false;
+            }
+            else
+            {
+                partnoindex = clmnnames.IndexOf("件号");
+                clmnnames.RemoveAt(partnoindex);
+            }
+
+            foreach (DataGridViewRow datarow in datagridview.Rows)
+            {
+                string partno = datarow.Cells[partnoindex].Value as string;
+                if(string.IsNullOrEmpty(partno))
+                    continue;
+                PartObject part = new PartObject(datarow.Cells[partnoindex].Value as string);
+                foreach (string clmnname in clmnnames)
+                {
+                    object cellvalue = datarow.Cells[clmnname].Value;
+                    part.PartProperties.Add(clmnname, cellvalue == null || 
+                        cellvalue is System.DBNull? string.Empty : cellvalue);
+                }
+                this.Parts.Add(part);
+            }
+            return true;
         }
         #endregion
     }
