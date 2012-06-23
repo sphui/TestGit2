@@ -10,6 +10,7 @@ using System.IO;
 using System.Data.SqlClient;
 using ADOX;
 using MongoDB.Driver;
+using MongoDB.Bson;
 
 namespace Import
 {
@@ -130,6 +131,12 @@ namespace Import
                 var db = mongo.GetDatabase("PartsManage");
                 var motorsdb = db.GetCollection("Motors");
 
+                Dictionary<string, object> dic = new Dictionary<string, object>();
+                dic["MotorSerialNumber"] = "p-8414";
+                QueryDocument querydoc = new QueryDocument(dic);
+                var motordoc = motorsdb.FindOne(querydoc);
+                MotorObject motor1 = new MotorObject(string.Empty);
+                motor1.FromMongoDocument(motordoc as BsonDocument);
                 //PartObject part = new PartObject("test1s");
                 //part.PartProperties.Add("a", "1");
                 //part.PartProperties.Add("b", string.Empty);

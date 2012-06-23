@@ -47,6 +47,14 @@ namespace Import
             partdoc["PartProperties"] = propsdoc;
             return partdoc;
         }
+
+        public bool FromMongoDocument(BsonDocument mongodoc)
+        {
+            SerialNumber = mongodoc.GetValue("PartSerialNumber").AsString;
+            BsonDocument propsdoc = mongodoc.GetValue("PartProperties").AsBsonDocument;
+            PartProperties = propsdoc.ToDictionary();
+            return true;
+        }
         #endregion
     }
 
@@ -94,6 +102,20 @@ namespace Import
             motordoc["Parts"] = partsdoc;
 
             return motordoc;
+        }
+
+        public bool FromMongoDocument(BsonDocument mongodoc)
+        {
+            SerialNumber = mongodoc.GetValue("MotorSerialNumber").AsString;
+            BsonDocument partsdoc = mongodoc.GetValue("Parts").AsBsonDocument;
+            foreach (BsonValue partvar in partsdoc.Values)
+            {
+                BsonDocument partdoc = partvar as BsonDocument;
+                PartObject part = new PartObject(string.Empty);
+                part.FromMongoDocument(partdoc);
+                Parts.Add(part);
+            }
+            return true;
         }
 
         public bool FromDataGridView(DataGridView datagridview)
