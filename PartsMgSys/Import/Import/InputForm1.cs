@@ -137,6 +137,7 @@ namespace Import
                 var motordoc = motorsdb.FindOne(querydoc);
                 MotorObject motor1 = new MotorObject(string.Empty);
                 motor1.FromMongoDocument(motordoc as BsonDocument);
+                dataGridView1.DataSource = motor1.ToDataTable();
                 //PartObject part = new PartObject("test1s");
                 //part.PartProperties.Add("a", "1");
                 //part.PartProperties.Add("b", string.Empty);

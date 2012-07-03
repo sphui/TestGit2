@@ -37,6 +37,7 @@ namespace Import
                     Process p = new Process();
                     string strmongoexe = Path.Combine(mongodbServerExePath, mongodbServerExeName);
                     p.StartInfo = new ProcessStartInfo(strmongoexe, "-dbpath " + mongodbDatabasePath);
+                    p.StartInfo.CreateNoWindow = true;
                     p.Start();
 
                     //create Data folder if it doesn't exist yet

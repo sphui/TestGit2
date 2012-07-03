@@ -5,6 +5,7 @@ using System.Text;
 using MongoDB.Driver;
 using MongoDB.Bson;
 using System.Windows.Forms;
+using System.Data;
 
 namespace Import
 {
@@ -153,6 +154,28 @@ namespace Import
                 this.Parts.Add(part);
             }
             return true;
+        }
+
+        public DataTable ToDataTable()
+        {
+            if (Parts.Count == 0)
+                return null;
+            DataTable table = new DataTable(SerialNumber);
+            PartObject part1 = Parts[0];
+            foreach (string strkey in part1.PartProperties.Keys)
+            {
+                table.Columns.Add(strkey);
+            }
+
+            table.Columns.Add("件号");
+            foreach (PartObject part in Parts)
+            {
+                Dictionary<string, object> dictoTable = new
+                        Dictionary<string, object>(part.PartProperties);
+                dictoTable["件号"] = part.SerialNumber;
+                table.Rows.Add(dictoTable.Values.ToArray());
+            }
+            return table;
         }
         #endregion
     }
